@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --gray1: #f5f6f7;
+  --gray2: #f0f2f5;
+  --gray3: #dddfe2;
+  --gray4: #8a8d91;
+  --gray5: #737373;
+  --black: #1c1e21;
+  --light-blue: #e7f3ff;
+  --blue1: #1877f2;
+  --blue2: #166fe5;
+  --green1: #42b72a;
+  --green2: #36a420;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
