@@ -1,0 +1,93 @@
+@media screen and (min-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 15rem;
+  }
+
+  .container__title {
+    display: initial;
+    width: 40rem;
+  }
+
+  .title__logo {
+    height: 10.6rem;
+  }
+
+  .title__paragraph {
+    font-size: 2.4rem;
+    width: auto;
+  }
+
+  .form-container {
+    max-width: initial;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container__form {
+    width: 39.6rem;
+  }
+
+  .input-container {
+    height: 5.2rem;
+  }
+
+  .form__input {
+    font-size: 1.7rem;
+  }
+
+  .form__log-in-btn {
+    height: 4.8rem;
+    font-size: 2rem;
+  }
+
+  .form__forgot-password {
+    font-size: 1.4rem;
+  }
+
+  .form__create-account-btn {
+    height: 4.8rem;
+    line-height: 4.8rem;
+    font-size: 1.7rem;
+  }
+
+  .form-container__create-page {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .container__title {
+    padding-bottom: 12rem;
+    margin-right: 5rem;
+    text-align: initial;
+    margin-bottom: 0;
+  }
+
+  .title__logo {
+    left: -30px;
+  }
+}
+
+@media screen and (min-width: 1075px) {
+  .container__title {
+    width: 58rem;
+    padding-bottom: 12rem;
+    padding-right: 15rem;
+    text-align: initial;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .title__paragraph {
+    font-size: 2.8rem;
+  }
+}
