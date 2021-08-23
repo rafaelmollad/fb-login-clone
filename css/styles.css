@@ -19,6 +19,11 @@
   --green2: #36a420;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -26,4 +31,184 @@ html {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
+  background: var(--gray2);
+}
+
+input {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* TITLE */
+
+.container__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.title__logo {
+  height: 8.6rem;
+  position: relative;
+  top: 1rem;
+}
+
+.title__paragraph {
+  font-size: 1.6rem;
+  width: 25rem;
+  color: var(--black);
+}
+
+/* FORM */
+.form-container,
+.container__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  max-width: 39.6rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container__form {
+  background: var(--white);
+  padding: 1.6rem 1.6rem 2.4rem 1.6rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  border: 1px solid var(--gray3);
+  border-radius: 6px;
+}
+
+.input-container:focus-within {
+  border-color: var(--blue1);
+  box-shadow: 0 0 0 2px var(--light-blue);
+}
+
+.password-input-container {
+  margin: 1rem 0;
+}
+
+.password-eye-container {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+}
+
+.password-eye-container:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.password-eye {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__input {
+  width: 100%;
+  padding: 0 1.6rem;
+  color: var(--black);
+  font-size: 1.2rem;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input:focus::placeholder {
+  opacity: 0.5;
+}
+
+.form__input::placeholder {
+  opacity: 0.9;
+}
+
+.form__log-in-btn {
+  height: 4.5rem;
+  margin-bottom: 2rem;
+  background: var(--blue1);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 200ms ease-in;
+  cursor: pointer;
+}
+
+.form__log-in-btn:hover {
+  background: var(--blue2);
+}
+
+.form__forgot-password {
+  font-size: 1.3rem;
+  color: var(--blue1);
+  align-self: center;
+}
+
+.form__forgot-password:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 2rem 0;
+  border-bottom: 1px solid var(--gray3);
+}
+
+.form__create-account-btn {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background: var(--green1);
+  color: var(--white);
+  border-radius: 6px;
+  font-weight: bold;
+  align-self: center;
+  padding: 0 1.6rem;
+  transition: background-color 200ms ease-in;
+}
+
+.form__create-account-btn:hover {
+  background: var(--green2);
+}
+
+/* Create a page for a celebrity, band or business */
+.form-container__create-page {
+  position: relative;
+  top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.create-page__link {
+  font-weight: bold;
+  color: var(--black);
+}
+
+.create-page__link:hover {
+  text-decoration: underline;
 }

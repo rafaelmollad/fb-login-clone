@@ -7,8 +7,48 @@
     <title>Facebook - Log In or Sign Up</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
   </head>
   <body>
-    <h2>Facebook login</h2>
+    <main class="container">
+      <!-- TITLE -->
+      <div class="container__title title">
+        <img src="images/logo.svg" class="title__logo" />
+        <p class="title__paragraph">
+          Connect with friends and the world around you on Facebook.
+        </p>
+      </div>
+      <!-- FORM -->
+      <div class="form-container">
+        <form class="container__form form">
+          <div class="input-container">
+            <input
+              type="text"
+              placeholder="Email or Phone Number"
+              class="form__input form__input--email"
+            />
+          </div>
+          <div class="input-container password-input-container">
+            <input
+              type="password"
+              placeholder="Password"
+              class="form__input form__input--password"
+            />
+            <div class="password-eye-container hidden">
+              <img src="images/eye-off.png" class="password-eye eye-off" />
+            </div>
+          </div>
+          <button class="form__log-in-btn">Log In</button>
+          <a href="#" class="form__forgot-password">Forgot Password?</a>
+          <div class="divider"></div>
+          <a href="#" class="form__create-account-btn">Create New Account</a>
+        </form>
+        <p class="form-container__create-page create-page">
+          <a href="#" class="create-page__link">Create a Page</a> for a
+          celebrity, band or business.
+        </p>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
