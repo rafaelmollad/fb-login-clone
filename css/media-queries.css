@@ -1,23 +1,23 @@
+/* These styles will be applied on devices with a width of at least 500px */
 @media screen and (min-width: 500px) {
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     padding-bottom: 15rem;
   }
 
-  .container__title {
+  .title-container {
     display: initial;
     width: 40rem;
   }
 
-  .title__logo {
+  .title-logo {
     height: 10.6rem;
   }
 
-  .title__paragraph {
+  .title-paragraph {
     font-size: 2.4rem;
     width: auto;
   }
@@ -28,7 +28,7 @@
     padding: 0;
   }
 
-  .container__form {
+  .form {
     width: 39.6rem;
   }
 
@@ -36,49 +36,51 @@
     height: 5.2rem;
   }
 
-  .form__input {
+  .form-input {
     font-size: 1.7rem;
   }
 
-  .form__log-in-btn {
+  .form-log-in-btn {
     height: 4.8rem;
     font-size: 2rem;
   }
 
-  .form__forgot-password {
+  .form-forgot-password {
     font-size: 1.4rem;
   }
 
-  .form__create-account-btn {
+  .form-create-account-btn {
     height: 4.8rem;
     line-height: 4.8rem;
     font-size: 1.7rem;
   }
 
-  .form-container__create-page {
+  .create-page-paragraph {
     font-size: 1.4rem;
   }
 }
 
+/* These styles will be applied on devices with a width of at least 900px */
 @media screen and (min-width: 900px) {
   .container {
     flex-direction: row;
   }
 
-  .container__title {
+  .title-container {
     padding-bottom: 12rem;
     margin-right: 5rem;
     text-align: initial;
     margin-bottom: 0;
   }
 
-  .title__logo {
+  .title-logo {
     left: -30px;
   }
 }
 
+/* These styles will be applied on devices with a width of at least 1075px */
 @media screen and (min-width: 1075px) {
-  .container__title {
+  .title-container {
     width: 58rem;
     padding-bottom: 12rem;
     padding-right: 15rem;
@@ -87,7 +89,7 @@
     margin-right: 0;
   }
 
-  .title__paragraph {
+  .title-paragraph {
     font-size: 2.8rem;
   }
 }
